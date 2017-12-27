@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.4 Bootstrapping
+
+* Addition of dep TOML configuration
+
 ## 0.0.3 Bootstrapping
 
 * Updates to the README referencing `OlegX` explicitly
