@@ -1,7 +1,7 @@
 <p align="center">
   <img alt="Golang Logo" src="docs/golang_logo.png" height="140" style="margin-left: 2em;" />
-  <h3 align="center">Logan API</h3>
-  <p align="center">The backend API service for the Logan Application</p>
+  <h3 align="center">OlegX API</h3>
+  <p align="center">The backend API service for the OlegX Application</p>
   <p align="center">
     <a href="https://github.com/oshalygin/olegx-api/releases/latest"><img alt="Release" src="https://img.shields.io/github/release/oshalygin/olegx-api.svg?style=flat-square"></a>
     <a href="https://travis-ci.org/oshalygin/olegx-api"><img alt="Travis" src="https://travis-ci.org/oshalygin/olegx-api.svg?branch=master"></a>
