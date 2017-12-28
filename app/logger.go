@@ -31,34 +31,42 @@ func NewLogger(l *logrus.Logger, fields logrus.Fields) Logger {
 	}
 }
 
+// SetField sets the field key/val pair
 func (l *logger) SetField(name, value string) {
 	l.fields[name] = value
 }
 
+// Debugf provides a formatted logger
 func (l *logger) Debugf(format string, args ...interface{}) {
 	l.tagged().Debugf(format, args...)
 }
 
+// Infof provides a formatted logger
 func (l *logger) Infof(format string, args ...interface{}) {
 	l.tagged().Infof(format, args...)
 }
 
+// Warnf provides a formatted logger
 func (l *logger) Warnf(format string, args ...interface{}) {
 	l.tagged().Warnf(format, args...)
 }
 
+// Errorf provides a formatted logger
 func (l *logger) Errorf(format string, args ...interface{}) {
 	l.tagged().Errorf(format, args...)
 }
 
+// Debug logger
 func (l *logger) Debug(args ...interface{}) {
 	l.tagged().Debug(args...)
 }
 
+// Info logger
 func (l *logger) Info(args ...interface{}) {
 	l.tagged().Info(args...)
 }
 
+// Warn logger
 func (l *logger) Warn(args ...interface{}) {
 	l.tagged().Warn(args...)
 }

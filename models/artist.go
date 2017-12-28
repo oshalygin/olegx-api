@@ -9,8 +9,8 @@ type Artist struct {
 }
 
 // Validate validates the Artist fields.
-func (m Artist) Validate() error {
-	return validation.ValidateStruct(&m,
-		validation.Field(&m.Name, validation.Required, validation.Length(0, 120)),
+func (artist Artist) Validate() error {
+	return validation.ValidateStruct(&artist,
+		validation.Field(&artist.Name, validation.Required, validation.Length(0, 120)),
 	)
 }
