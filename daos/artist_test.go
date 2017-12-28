@@ -3,9 +3,8 @@ package daos
 import (
 	"testing"
 
-	"github.com/qiangxue/golang-restful-starter-kit/app"
-	"github.com/qiangxue/golang-restful-starter-kit/models"
-	"github.com/qiangxue/golang-restful-starter-kit/testdata"
+	"github.com/oshalygin/olegx-api/app"
+	"github.com/oshalygin/olegx-api/models"
 	"github.com/stretchr/testify/assert"
 )
 

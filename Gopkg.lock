@@ -86,12 +86,6 @@
   version = "v1.0.0"
 
 [[projects]]
-  branch = "master"
-  name = "github.com/qiangxue/golang-restful-starter-kit"
-  packages = ["apis","app","daos","errors","models","services","testdata","util"]
-  revision = "6633781713379acbdbe433c41f48e110c7e7b0fe"
-
-[[projects]]
   name = "github.com/spf13/afero"
   packages = [".","mem"]
   revision = "8d919cbe7e2627e417f3e45c3c0e489a5b7e2536"
@@ -154,6 +148,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "9fc1bcd2098bffe68a1d8f25805dd08d588c48e5c27bcfd72b0aafc8723e5eb9"
+  inputs-digest = "bdd5f5a183b78600d453adfd12a5c673baf9439275d9fd11af5c6835f6006808"
   solver-name = "gps-cdcl"
   solver-version = 1
