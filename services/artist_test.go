@@ -39,7 +39,7 @@ func TestArtistService_Create(t *testing.T) {
 	// dao error
 	_, err = s.Create(nil, &models.Artist{
 		Id:   100,
-		Name: "ddd",
+		Name: "Foobar",
 	})
 	assert.NotNil(t, err)
 

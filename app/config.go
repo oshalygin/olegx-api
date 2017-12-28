@@ -3,8 +3,8 @@ package app
 import (
 	"fmt"
 
-	"github.com/spf13/viper"
 	"github.com/go-ozzo/ozzo-validation"
+	"github.com/spf13/viper"
 )
 
 // Config stores the application-wide configurations
@@ -12,15 +12,15 @@ var Config appConfig
 
 type appConfig struct {
 	// the path to the error message file. Defaults to "config/errors.yaml"
-	ErrorFile          string `mapstructure:"error_file"`
+	ErrorFile string `mapstructure:"error_file"`
 	// the server port. Defaults to 8080
-	ServerPort         int    `mapstructure:"server_port"`
+	ServerPort int `mapstructure:"server_port"`
 	// the data source name (DSN) for connecting to the database. required.
-	DSN                string `mapstructure:"dsn"`
+	DSN string `mapstructure:"dsn"`
 	// the signing method for JWT. Defaults to "HS256"
-	JWTSigningMethod   string `mapstructure:"jwt_signing_method"`
+	JWTSigningMethod string `mapstructure:"jwt_signing_method"`
 	// JWT signing key. required.
-	JWTSigningKey      string `mapstructure:"jwt_signing_key"`
+	JWTSigningKey string `mapstructure:"jwt_signing_key"`
 	// JWT verification key. required.
 	JWTVerificationKey string `mapstructure:"jwt_verification_key"`
 }
@@ -49,7 +49,7 @@ func LoadConfig(configPaths ...string) error {
 		v.AddConfigPath(path)
 	}
 	if err := v.ReadInConfig(); err != nil {
-		return fmt.Errorf("Failed to read the configuration file: %s", err)
+		return fmt.Errorf("failed to read the configuration file: %s", err)
 	}
 	if err := v.Unmarshal(&Config); err != nil {
 		return err

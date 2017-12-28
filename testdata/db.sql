@@ -3,16 +3,16 @@ DROP TABLE IF EXISTS artist;
 
 CREATE TABLE artist
 (
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(120)
+  id   SERIAL PRIMARY KEY,
+  name VARCHAR(120)
 );
 
 CREATE TABLE album
 (
-    id SERIAL PRIMARY KEY,
-    title VARCHAR(160)  NOT NULL,
-    artist_id INTEGER  NOT NULL,
-    FOREIGN KEY (artist_id) REFERENCES artist (id) ON DELETE CASCADE
+  id        SERIAL PRIMARY KEY,
+  title     VARCHAR(160) NOT NULL,
+  artist_id INTEGER      NOT NULL,
+  FOREIGN KEY (artist_id) REFERENCES artist (id) ON DELETE CASCADE
 );
 
 INSERT INTO artist (name) VALUES ('AC/DC');
@@ -236,7 +236,8 @@ INSERT INTO artist (name) VALUES ('Orchestre Révolutionnaire et Romantique & Jo
 INSERT INTO artist (name) VALUES ('Britten Sinfonia, Ivor Bolton & Lesley Garrett');
 INSERT INTO artist (name) VALUES ('Chicago Symphony Chorus, Chicago Symphony Orchestra & Sir Georg Solti');
 INSERT INTO artist (name) VALUES ('Sir Georg Solti & Wiener Philharmoniker');
-INSERT INTO artist (name) VALUES ('Academy of St. Martin in the Fields, John Birch, Sir Neville Marriner & Sylvia McNair');
+INSERT INTO artist (name)
+VALUES ('Academy of St. Martin in the Fields, John Birch, Sir Neville Marriner & Sylvia McNair');
 INSERT INTO artist (name) VALUES ('London Symphony Orchestra & Sir Charles Mackerras');
 INSERT INTO artist (name) VALUES ('Barry Wordsworth & BBC Concert Orchestra');
 INSERT INTO artist (name) VALUES ('Herbert Von Karajan, Mirella Freni & Wiener Philharmoniker');
@@ -503,7 +504,8 @@ INSERT INTO album (title, artist_id) VALUES ('Live [Disc 1]', 137);
 INSERT INTO album (title, artist_id) VALUES ('Live [Disc 2]', 137);
 INSERT INTO album (title, artist_id) VALUES ('The Singles', 138);
 INSERT INTO album (title, artist_id) VALUES ('Beyond Good And Evil', 139);
-INSERT INTO album (title, artist_id) VALUES ('Pure Cult: The Best Of The Cult (For Rockers, Ravers, Lovers & Sinners) [UK]', 139);
+INSERT INTO album (title, artist_id)
+VALUES ('Pure Cult: The Best Of The Cult (For Rockers, Ravers, Lovers & Sinners) [UK]', 139);
 INSERT INTO album (title, artist_id) VALUES ('The Doors', 140);
 INSERT INTO album (title, artist_id) VALUES ('The Police Greatest Hits', 141);
 INSERT INTO album (title, artist_id) VALUES ('Hot Rocks, 1964-1971 (Disc 1)', 142);
@@ -547,9 +549,11 @@ INSERT INTO album (title, artist_id) VALUES ('Battlestar Galactica (Classic), Se
 INSERT INTO album (title, artist_id) VALUES ('Aquaman', 159);
 INSERT INTO album (title, artist_id) VALUES ('Instant Karma: The Amnesty International Campaign to Save Darfur', 150);
 INSERT INTO album (title, artist_id) VALUES ('Speak of the Devil', 114);
-INSERT INTO album (title, artist_id) VALUES ('20th Century Masters - The Millennium Collection: The Best of Scorpions', 179);
+INSERT INTO album (title, artist_id)
+VALUES ('20th Century Masters - The Millennium Collection: The Best of Scorpions', 179);
 INSERT INTO album (title, artist_id) VALUES ('House of Pain', 180);
-INSERT INTO album (title, artist_id) VALUES ('Radio Brasil (O Som da Jovem Vanguarda) - Seleccao de Henrique Amaro', 36);
+INSERT INTO album (title, artist_id)
+VALUES ('Radio Brasil (O Som da Jovem Vanguarda) - Seleccao de Henrique Amaro', 36);
 INSERT INTO album (title, artist_id) VALUES ('Cake: B-Sides and Rarities', 196);
 INSERT INTO album (title, artist_id) VALUES ('LOST, Season 4', 149);
 INSERT INTO album (title, artist_id) VALUES ('Quiet Songs', 197);
@@ -584,7 +588,8 @@ INSERT INTO album (title, artist_id) VALUES ('The Last Night of the Proms', 224)
 INSERT INTO album (title, artist_id) VALUES ('Puccini: Madama Butterfly - Highlights', 225);
 INSERT INTO album (title, artist_id) VALUES ('Holst: The Planets, Op. 32 & Vaughan Williams: Fantasies', 226);
 INSERT INTO album (title, artist_id) VALUES ('Pavarotti''s Opera Made Easy', 227);
-INSERT INTO album (title, artist_id) VALUES ('Great Performances - Barber''s Adagio and Other Romantic Favorites for Strings', 228);
+INSERT INTO album (title, artist_id)
+VALUES ('Great Performances - Barber''s Adagio and Other Romantic Favorites for Strings', 228);
 INSERT INTO album (title, artist_id) VALUES ('Carmina Burana', 229);
 INSERT INTO album (title, artist_id) VALUES ('A Copland Celebration, Vol. I', 230);
 INSERT INTO album (title, artist_id) VALUES ('Bach: Toccata & Fugue in D Minor', 231);
@@ -598,7 +603,8 @@ INSERT INTO album (title, artist_id) VALUES ('Beethoven Piano Sonatas: Moonlight
 INSERT INTO album (title, artist_id) VALUES ('Great Recordings of the Century - Mahler: Das Lied von der Erde', 240);
 INSERT INTO album (title, artist_id) VALUES ('Elgar: Cello Concerto & Vaughan Williams: Fantasias', 241);
 INSERT INTO album (title, artist_id) VALUES ('Adams, John: The Chairman Dances', 242);
-INSERT INTO album (title, artist_id) VALUES ('Tchaikovsky: 1812 Festival Overture, Op.49, Capriccio Italien & Beethoven: Wellington''s Victory', 243);
+INSERT INTO album (title, artist_id)
+VALUES ('Tchaikovsky: 1812 Festival Overture, Op.49, Capriccio Italien & Beethoven: Wellington''s Victory', 243);
 INSERT INTO album (title, artist_id) VALUES ('Palestrina: Missa Papae Marcelli & Allegri: Miserere', 244);
 INSERT INTO album (title, artist_id) VALUES ('Prokofiev: Romeo & Juliet', 245);
 INSERT INTO album (title, artist_id) VALUES ('Strauss: Waltzes', 226);
@@ -625,13 +631,15 @@ INSERT INTO album (title, artist_id) VALUES ('Purcell: The Fairy Queen', 261);
 INSERT INTO album (title, artist_id) VALUES ('The Ultimate Relexation Album', 262);
 INSERT INTO album (title, artist_id) VALUES ('Purcell: Music for the Queen Mary', 263);
 INSERT INTO album (title, artist_id) VALUES ('Weill: The Seven Deadly Sins', 264);
-INSERT INTO album (title, artist_id) VALUES ('J.S. Bach: Chaconne, Suite in E Minor, Partita in E Major & Prelude, Fugue and Allegro', 265);
+INSERT INTO album (title, artist_id)
+VALUES ('J.S. Bach: Chaconne, Suite in E Minor, Partita in E Major & Prelude, Fugue and Allegro', 265);
 INSERT INTO album (title, artist_id) VALUES ('Prokofiev: Symphony No.5 & Stravinksy: Le Sacre Du Printemps', 248);
 INSERT INTO album (title, artist_id) VALUES ('Szymanowski: Piano Works, Vol. 1', 266);
 INSERT INTO album (title, artist_id) VALUES ('Nielsen: The Six Symphonies', 267);
 INSERT INTO album (title, artist_id) VALUES ('Great Recordings of the Century: Paganini''s 24 Caprices', 268);
 INSERT INTO album (title, artist_id) VALUES ('Liszt - 12 Études D''Execution Transcendante', 269);
-INSERT INTO album (title, artist_id) VALUES ('Great Recordings of the Century - Shubert: Schwanengesang, 4 Lieder', 270);
+INSERT INTO album (title, artist_id)
+VALUES ('Great Recordings of the Century - Shubert: Schwanengesang, 4 Lieder', 270);
 INSERT INTO album (title, artist_id) VALUES ('Locatelli: Concertos for Violin, Strings and Continuo, Vol. 3', 271);
 INSERT INTO album (title, artist_id) VALUES ('Respighi:Pines of Rome', 226);
 INSERT INTO album (title, artist_id) VALUES ('Schubert: The Late String Quartets & String Quintet (3 CD''s)', 272);
