@@ -24,3 +24,11 @@
 [[constraint]]
   name = "github.com/spf13/viper"
   version = "1.0.0"
+
+[[constraint]]
+  name = "github.com/go-ozzo/ozzo-validation"
+  version = "3.3.0"
+
+[[constraint]]
+  name = "github.com/go-ozzo/ozzo-dbx"
+  version = "1.0.11"
